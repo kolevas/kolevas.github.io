@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    font-family: Georgia serif;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    background-color: #b4bdec;
+}
+nav ul li{
+    list-style: none;
+    padding: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-variant-caps: all-petite-caps;
+    font-weight: 500;
+}
+
+.main{
+    padding: 50px 50px 0 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #eaeaea;
+}
+
+.main .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+.main .grid >div h2{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+.main .grid > div{
+    border: 5px dashed #b4bdec;
+    background-color: #e0e0f3;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.projects{
+    margin-top: 50px;
+}
+
+.projects h2{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #b4bdec;
+    width: 25%;
+}
+.projects > div{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #5b5b5b;
+}
+.projects > div:nth-of-type(1){
+    margin-bottom: 20px;
+}
+
+
+.competitions > div, .exchanges > div{
+    display: inline-block;
+    width: 40%;
+    margin-left: 30px;
+    background-color: #e0e0f3;
+    padding: 25px;
+    border: 5px dashed #b4bdec;
+    border-radius: 8px;
+}
+.exchanges h2{
+    border-bottom: 2px solid #b4bdec;
+    width: 25%;
+}
+
+.exchanges >div:nth-of-type(2) p{
+    padding-bottom: 18px;
+}
+
+.line{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.skills-container{
+    width: 700px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.skills-container h2{
+    border-bottom: 2px solid #b4bdec;
+    width: 25%;
+}
+
+/*od net*/
+.bar{
+    position: relative;
+
+    border: 2px solid #b4bdec;
+
+    border-radius: 20px;
+
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #b4bdec;
+
+
+}
+#html-bar{
+    animation: html-fill forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 80%;
+    }
+}
+#css-bar{
+    animation: css-fill forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 90%;
+    }
+}
+#js-bar{
+    animation: js-fill forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 30%;
+    }
+}
+#c-bar{
+    animation: c-fill forwards;
+}
+@keyframes c-fill{
+    100%{
+        width: 80%;
+    }
+}
+#cpp-bar{
+    animation: cpp-fill forwards;
+}
+@keyframes cpp-fill{
+    100%{
+        width: 90%;
+    }
+}
+/*od net*/
+
+
+
+footer{
+    background-color: #b4bdec;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*float: right;*/
+}
+footer p{
+    padding-top: 20px;
+    padding-left: 70px;
+    color: white;
+    font-weight: 480;
+}
+.footer_nav ul{
+    gap: 10px;
+    padding-right: 70px;
+}

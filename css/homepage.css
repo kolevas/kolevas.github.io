@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    font-family: Georgia serif;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    background-color: #b4bdec;
+}
+nav ul li{
+    list-style: none;
+    padding: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-variant-caps: all-petite-caps;
+    font-weight: 500;
+}
+
+.header{
+    background-color: #eaeaea;
+    padding-bottom: 200px;
+}
+.header .inner{
+    padding: 20px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.header .inner img{
+    border-radius: 300px;
+}
+.header .inner .header-text{
+    width: 530px;
+    height: 250px;
+    margin-top: 90px;
+    background-color: white;
+    border: 5px dashed #d2cbe7;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+.header .inner .header-text h2{
+    color: #b4bdec;
+    font-size: 30px;
+    margin: -10px 0;
+}
+.header .inner .header-text p:first-of-type{
+    font-size: 17px;
+    padding-top: 0px;
+}
+.header .inner .header-text p:last-of-type{
+    /*margin-right: 20px;*/
+    font-size: 20px;
+    text-align: justify;
+}
+
+.fam-friends{
+    margin-top: -180px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    /*margin: 50px 100px;*/
+    text-align: justify;
+}
+
+.fam-friends .shtip, .fam-friends .famfriends{
+    background-color: #e0e0f3;
+    padding: 15px;
+    border-radius: 8px;
+    border: 5px dashed #b4bdec;
+}
+
+.free-time{
+    margin: 0 210px 40px 210px;
+    background-color: #eaeaea;
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: 5px dashed lightgray;
+}
+
+.columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+
+footer{
+    background-color: #b4bdec;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*float: right;*/
+}
+footer p{
+    padding-top: 20px;
+    padding-left: 70px;
+    color: white;
+    font-weight: 480;
+}
+.footer_nav ul{
+    gap: 10px;
+    padding-right: 70px;
+}
